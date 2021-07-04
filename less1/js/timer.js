@@ -31,11 +31,11 @@ function startTimer() {
                 seconds.value = 59;
                 bip.play();
             } else {
-                seconds.value--
+                seconds.value--;
                 if (minutes.value == 0 && seconds.value <= 5) {
-                    bip1.play()
+                    bip1.play();
                 } else {
-                    bip.play()
+                    bip.play();
                 }
 
             }
