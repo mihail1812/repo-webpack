@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор дат</title>
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="main__buttonMenu" id="main__menu">
+            <button class="main__buttCalc" id="1">Калькулятор дат</button>
+            <button class="main__buttTimer" id="2">Таймер</button>
+        </div>
+
+        <div class="main__datecalc">
+            <form id="datecalc">
+                <h3>Калькулятор дат</h3>
+                <label>
+                    <strong>Первая дата:</strong>
+                    <input type="date" name="firstDate">
+                </label>
+                <label>
+                    <strong>Вторая дата:</strong>
+                    <input type="date" name="secondDate">
+                </label>
+                <button type="submit">Расчитать промежуток</button>
+                <p id="datacalc__result"></p>
+            </form>
+        </div>
+
+        <div class="main__timer" id="timer">
+            <h3>Таймер</h3>
+            <label>Минуты
+                <input type="number" id="minutes" min="0" max="100">
+            </label>
+            <label>Секунды
+                <input type="number" id="seconds" min="0" max="60">
+            </label>
+            <div class="main__buttTimer">
+                <button id="start" type="button">Старт</button>
+                <button id="stop" type="button">Стоп</button>
+                <button id="clear" type="button">Сброс</button>
+            </div>
+            <p id="timer__err"></p>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
