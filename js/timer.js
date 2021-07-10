@@ -5,9 +5,9 @@ import {
 const startButton = document.querySelector("#start").addEventListener("click", startTimer);
 const stopButton = document.querySelector("#stop").addEventListener("click", stopTimer);
 const clearButton = document.querySelector("#clear").addEventListener("click", clearTimer);
-const audio = new Audio('audio.mp3');
-const bip = new Audio('bip.mp3');
-const bip1 = new Audio('bip1.mp3')
+const audio = new Audio('audio/audio.mp3');
+const bip = new Audio('audio/bip.mp3');
+const bip1 = new Audio('audio/bip1.mp3')
 minutes.value = 0;
 seconds.value = 0;
 let timerId = null;

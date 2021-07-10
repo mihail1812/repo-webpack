@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "serve": "webpack serve"
+    "serve": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mihail1812/repo-webpack#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "gulp": "^4.0.2",
