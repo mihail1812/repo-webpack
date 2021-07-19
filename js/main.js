@@ -4,5 +4,5 @@ import "./datecalck.js";
 
 import "./timer.js";
 
-import "../css/style.css";
+import "../css/style.sass";
 

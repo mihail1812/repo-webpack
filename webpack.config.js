@@ -8,7 +8,7 @@ const {
 const {
     BundleAnalyzerPlugin
 } = require('webpack-bundle-analyzer');
-const CopyPlugin = require("copy-webpack-plugin");
+//const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: resolve(__dirname, 'js', 'main.js'),
@@ -21,14 +21,14 @@ module.exports = {
                 test: /\.sass$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            },
-            // тут еще нужно доделать
+            //{
+            //    test: /\.css$/,
+            //    use: ['style-loader', 'css-loader']
+            //},
+            
 
             {
-                test: /\\.(png|jpe?g|gif|mp3)$/i,
+                test: /\.(png|jpe?g|gif|mp3)$/i,
                 use: 'file-loader'
 
             }
@@ -38,12 +38,12 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: resolve(__dirname, 'index.html')
         }),
-        new BundleAnalyzerPlugin,
-        new CopyPlugin({
-            patterns: [{
-                from: (__dirname, "audio"),
-                to: "audio"
-            }]
-        }),
+        new BundleAnalyzerPlugin
+        //new CopyPlugin({
+        //    patterns: [{
+        //        from: (__dirname, "audio"),
+        //        to: "audio"
+        //    }]
+        //}),
     ]
 }
